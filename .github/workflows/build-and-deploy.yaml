@@ -97,7 +97,7 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-        creds: '{"clientId":"${{ secrets.AZURE_SP_CLIENTID }}","clientSecret":"${{ secrets.AZURE_SP_CLIENTSECRET }}","subscriptionId":"${{ secrets.AZURE_SP_SUBSCRIPTIONID }}","tenantId":"${{ secrets.AZURE_SP_TENANTID }}"}'
+          creds: '{"clientId":"${{ secrets.AZURE_SP_CLIENTID }}","clientSecret":"${{ secrets.AZURE_SP_CLIENTSECRET }}","subscriptionId":"${{ secrets.AZURE_SP_SUBSCRIPTIONID }}","tenantId":"${{ secrets.AZURE_SP_TENANTID }}"}'
 
       - name: Deploy bicep
         uses: azure/CLI@v1
